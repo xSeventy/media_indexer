@@ -19,7 +19,7 @@ fs::path getHomeDirectory() {
     return fs::path(home);
 }
 
-// так как рашсрение файла, например, может быть .Mp3, .MP3, .mp3
+// так как расширение файла, например, может быть .Mp3, .MP3, .mp3
 // нужна функция которая будет расширение преобразовывать в универсальное
 string toLower(string value) {
     for(char& c : value) {
