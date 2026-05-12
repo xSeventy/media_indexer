@@ -18,7 +18,7 @@ build/media_indexer
 Программа принимает два аргумента командной строки:
 
 ```bash
-./build/media_indexer <directory_path> <scan_interval_seconds>
+./build/media_indexer <scan_interval_seconds> <directory_path>
 ```
 
 Где:
@@ -26,10 +26,13 @@ build/media_indexer
 - `<directory_path>` — путь к каталогу, который нужно сканировать;
 - `<scan_interval_seconds>` — периодичность сканирования в секундах.
 
+такая последовательность взята из условия задачи
+
+
 Пример запуска:
 
 ```bash
-./build/media_indexer /home/user 60
+./build/media_indexer 60 /home/use
 ```
 
 В этом примере программа будет каждые 60 секунд сканировать каталог `/home/user`.
